@@ -1,1 +1,1 @@
-# SelfStudy_Python-Macro
+파이썬으로 매크로 만들기
