@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    h1{
+      text-align:center;
+    }
+    button{
+      padding:50px;
+      background-color:green;
+      position: absolute;
+      top:30%;
+      left:10%;
+      color:black;
+      text-align: center;
+      font-size:60px;
+    }
+    span{
+      color:white;
+      font-weight:bold;
+      text-align:center;
+    }
+    </style>
+    <script>
+    function random_alert(){
+      var seed = Math.random()
+      var ratio = 0.5
+      if (seed < ratio){
+        alert('예외상황 발생!!')
+      }
+      else {
+        location.href='https://www.naver.com/'
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <h1> 일정 확률로 경고창 발생 !! <h1>
+
+  <h1>
+  <button onclick="random_alert()"><span>NAVER</span></button>
+  </body>
+</html>

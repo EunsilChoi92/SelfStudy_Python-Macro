@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      span{
+        color:red;
+
+      }
+      h1{
+        text-align: center;
+      }
+      table {
+        width: 400px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .margin{
+        padding:0px;
+        width:1px;
+      }
+      .ok {
+        border : 2px solid gray;
+        height:100px;
+        width : 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1> 가끔씩 <span>빨간색</span> 등장 !! </h1>
+    <table>
+      <tr>
+        <td class='margin' width='10'></td>
+        <td class='ok'></td>
+        <td class='ok'></td>
+        <td class='ok'></td>
+      </tr>
+      <tr>
+        <td class='margin' width='10'></td>
+        <td class='ok'></td>
+        <td class='ok'></td>
+        <td class='ok'></td>
+      </tr>
+      <tr>
+        <td class='margin' width='10'></td>
+        <td class='ok'></td>
+        <td class='ok'></td>
+        <td class='ok'></td>
+      </tr>
+      <script>
+        var i = 0;
+        while (i<9){
+          var seed = Math.random();
+          var ratio = 0.01;
+
+          if (seed < ratio){
+            document.querySelectorAll('.ok')[i].bgColor='red';
+          }
+          i=i+1;
+        }
+
+      </script>
+    </table>
+  </body>
+</html>
